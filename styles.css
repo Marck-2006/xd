@@ -1,0 +1,64 @@
+body {
+    background: url('morat.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    font-family: 'Cursive', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    color: #af1775;
+}
+
+input[type="text"] {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    width: 80%;
+    border: 2px solid #032250;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #66b971;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+button:hover {
+    box-shadow: 0 0 20px rgba(20, 114, 56, 0.8);
+}
+
+.message {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.message.show {
+    opacity: 1;
+}
+#imagen-correcta {
+    display: none; /* Ocultar por defecto */
+    position: fixed; /* Fijar al viewport */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Ocupa el 80% del ancho de la pantalla */
+    height: auto; /* Ajusta la altura proporcionalmente al contenido */
+    max-width: 200px; /* Limita el tamaño máximo a 300px */
+    padding: 20px; /* Espaciado interno para mejor apariencia */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center; /* Centrar el contenido dentro del elemento */
+}
